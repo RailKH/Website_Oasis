@@ -1,0 +1,89 @@
+@font-face{
+    font-family: ProximaNova;
+    src: url(./fonts/Proxima_Nova.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.section-inner{
+    width: 1336px;
+    margin: 0 auto;
+    font-family: "ProximaNova", sans-serif;
+}
+
+.main{
+    width: 100vw;
+}
+
+header{
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo{
+        width: 390px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        // display: inline-block;
+        div{
+            display: inline-block;
+            // vertical-align: middle;
+        }
+        
+    }
+
+    .contacts{
+        width: 450px;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
+        &_item{
+            width: 191px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: right;
+
+            span{
+                font-size: 18px;
+                font-weight: 700;      
+            }
+        }
+    }
+
+    .link{
+        width: 280px;
+        background-color: #5c9800;
+        position: relative;
+        border-radius: 30px;
+        padding: 15px 20px;
+        a{
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            height: 50px;
+            text-transform: uppercase;
+            
+        }
+        &:after{
+            content: "";
+            display: block;
+            background: url(./img/right-arrow.png) center center no-repeat;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: 15px;
+            top: 10px;
+        }
+    }
+}
